@@ -28,9 +28,9 @@ def calculate_avg_hoursperday(data):
 
     totalHours = 0
     for i, hour in enumerate(hours):
-        if(i == 0):
+        if i == 0:
             continue
-        if(hour == ''):
+        if hour == '':
             continue
         int_hour = int(hour)
         totalHours = totalHours + int_hour
@@ -88,28 +88,61 @@ def calculate_mostpoularsocialmedia(data):
 
 
 def calculate_mentalhealthaffect(data):
- 
     health = data.col_values(11)
 
     affects = 0
-    
     for i in health:
-        if(i == 'Y'):
+        if i == 'Y':
             affects += 1
 
-    print("Number of people who think they have mental issues", affects)
+    print("Number of people who think they have mental issues:", affects)
 
-    def calculate_consideraddicted(data):
+def calculate_consideraddicted(data):
 
-        addict = data.col_values(13)
+    addict = data.col_values(13)
 
-        consider = 0
+    consider = 0
 
-        for x in addict:
-            if(x == 'Y'):
-                consider += 1
+    for x in addict:
+        if x == 'Y':
+            consider += 1
 
-        print("Number of people who think they are addicted", consider)
+    print("Number of people who think they are addicted:", consider)
+
+def calculate_harasssedonline(data):
+
+    harass = data.col_values(12)
+
+    online = 0
+
+    for j in harass:
+        if j == 'Y':
+            online += 1
+
+    print("Number of people harassed online:", online) 
+
+def calculate_useafterbed(data):
+
+    useafter = data.col_values(10)
+
+    after = 0
+
+    for a in useafter:
+        if a == 'Y':
+            after += 1
+    print("Number of people who use after bed:", after)
+
+def calculate_beforebed(data):
+
+    beforebed = data.col_values(9)
+
+    before = 0
+
+    for z in beforebed:
+        if z == 'Y':
+            before += 1
+    print("Number of people who use before bed:", before)
+
 
 calculate_avg_hoursperday(survey)
 
@@ -118,3 +151,9 @@ calculate_mostpoularsocialmedia(survey)
 calculate_mentalhealthaffect(survey)
 
 calculate_consideraddicted(survey)
+
+calculate_harasssedonline(survey)
+
+calculate_useafterbed(survey) 
+
+calculate_beforebed(survey)
