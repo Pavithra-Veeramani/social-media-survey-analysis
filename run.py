@@ -86,6 +86,35 @@ def calculate_mostpoularsocialmedia(data):
     elif noTwtr >= noYoutube and noTwtr >= noTtok and noTwtr >= noInsta and noTwtr >= noLinked and noTwtr >= noFb:
         print('Twtr has the most : ', noTwtr)
 
+
+def calculate_mentalhealthaffect(data):
+ 
+    health = data.col_values(11)
+
+    affects = 0
+    
+    for i in health:
+        if(i == 'Y'):
+            affects += 1
+
+    print("Number of people who think they have mental issues", affects)
+
+    def calculate_consideraddicted(data):
+
+        addict = data.col_values(13)
+
+        consider = 0
+
+        for x in addict:
+            if(x == 'Y'):
+                consider += 1
+
+        print("Number of people who think they are addicted", consider)
+
 calculate_avg_hoursperday(survey)
 
 calculate_mostpoularsocialmedia(survey)
+
+calculate_mentalhealthaffect(survey)
+
+calculate_consideraddicted(survey)
