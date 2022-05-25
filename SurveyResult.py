@@ -9,6 +9,21 @@ class SurveyResult:
     def add_most_popular_socialmedia(self, mostPopular):
         self._result['MostPopularSocialMedia'] = mostPopular
 
+    def mental_health_affect(self, mentalhealth):
+        self._result['Mentalhealth'] = mentalhealth
+
+    def consider_addicted(self, addicted):
+        self._result['Consideraddicted'] = addicted
+
+    def  harass_online(self, online):
+        self._result['Harassedonline'] = online
+
+    def use_after_bed(self, afterbed):
+        self._result['useafterbed'] = afterbed
+
+    def use_before_bed(self, beforebed):
+        self._result['usebeforebed'] = beforebed
+
     def get_result(self):
         return self._result
     # @property

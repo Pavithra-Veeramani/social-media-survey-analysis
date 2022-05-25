@@ -168,15 +168,15 @@ averageHoursPerDay = SurveyProcessor.calculate_avg_hoursperday()
 
 mostPopular = SurveyProcessor.calculate_mostpoularsocialmedia()
 
-SurveyProcessor.calculate_mentalhealthaffect()
+mentalhealth = SurveyProcessor.calculate_mentalhealthaffect()
 
-SurveyProcessor.calculate_consideraddicted()
+addicted = SurveyProcessor.calculate_consideraddicted()
 
-SurveyProcessor.calculate_harasssedonline()
+harassonline = SurveyProcessor.calculate_harasssedonline()
 
-SurveyProcessor.calculate_useafterbed()
+afterbed = SurveyProcessor.calculate_useafterbed()
 
-SurveyProcessor.calculate_beforebed()
+beforebed = SurveyProcessor.calculate_beforebed()
 
 SurveyResult = SurveyResult()
 SurveyResult.add_avg_hours(averageHoursPerDay)

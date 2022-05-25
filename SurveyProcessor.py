@@ -85,7 +85,8 @@ class SurveyProcessor:
             if i == 'Y':
                 affects += 1
 
-        print("Number of people who think they have mental issues:", affects)
+        return affects
+        
 
     def calculate_consideraddicted(self):
 
@@ -97,7 +98,7 @@ class SurveyProcessor:
             if x == 'Y':
                 consider += 1
 
-        print("Number of people who think they are addicted:", consider)
+        return consider
 
     def calculate_harasssedonline(self):
 
@@ -109,7 +110,7 @@ class SurveyProcessor:
             if j == 'Y':
                 online += 1
 
-        print("Number of people harassed online:", online) 
+        return online
 
     def calculate_useafterbed(self):
 
@@ -120,7 +121,8 @@ class SurveyProcessor:
         for a in useafter:
             if a == 'Y':
                 after += 1
-        print("Number of people who use after bed:", after)
+
+        return after
 
     def calculate_beforebed(self):
 
@@ -131,4 +133,5 @@ class SurveyProcessor:
         for z in beforebed:
             if z == 'Y':
                 before += 1
-        print("Number of people who use before bed:", before)
+
+        return before
