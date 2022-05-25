@@ -147,48 +147,40 @@ def calculate_avg_hoursperday(data):
 #     print("Number of people who use before bed:", before)
 
 
-# def write_output():
-#     workbook = xlsxwriter.Workbook('hello.xlsx')
+def write_output():
+    workbook = xlsxwriter.Workbook('Result.xlsx')
  
-#     # The workbook object is then used to add new
-#     # worksheet via the add_worksheet() method.
-#     worksheet = workbook.add_worksheet()
+    # The workbook object is then used to add new
+    # worksheet via the add_worksheet() method.
+    worksheet = workbook.add_worksheet()
     
-#     # Use the worksheet object to write
-#     # data via the write() method.
-#     worksheet.write('A1', 'Hello..')
-#     worksheet.write('B1', 'Geeks')
-#     worksheet.write('C1', 'For')
-#     worksheet.write('D1', 'Geeks')
+    # Use the worksheet object to write
+    # data via the write() method.
+    worksheet.write('A1', 'Hello..')
     
-#     # Finally, close the Excel file
-#     # via the close() method.
-#     workbook.close()
+    # Finally, close the Excel file
+    # via the close() method.
+    workbook.close()
 
 SurveyProcessor = SurveyProcessor(survey)
 
 averageHoursPerDay = SurveyProcessor.calculate_avg_hoursperday()
-#calculate_avg_hoursperday(survey)
 
-SurveyProcessor.calculate_mostpoularsocialmedia()
-#calculate_mostpoularsocialmedia(survey)
+mostPopular = SurveyProcessor.calculate_mostpoularsocialmedia()
 
 SurveyProcessor.calculate_mentalhealthaffect()
-#alculate_mentalhealthaffect(survey)
 
 SurveyProcessor.calculate_consideraddicted()
-#calculate_consideraddicted(survey)
 
 SurveyProcessor.calculate_harasssedonline()
-#calculate_harasssedonline(survey)
 
 SurveyProcessor.calculate_useafterbed()
-#calculate_useafterbed(survey) 
 
 SurveyProcessor.calculate_beforebed()
-#calculate_beforebed(survey)
 
 SurveyResult = SurveyResult()
 SurveyResult.add_avg_hours(averageHoursPerDay)
+SurveyResult.add_most_popular_socialmedia(mostPopular)
 
-#write_output()
+
+print(SurveyResult.get_result())

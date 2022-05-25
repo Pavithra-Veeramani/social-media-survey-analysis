@@ -61,19 +61,21 @@ class SurveyProcessor:
             elif(site == 'INST'):
                 noInsta += 1
 
+        most_popular = {}
         if noYoutube >= noFb and noYoutube >= noTtok and noYoutube >= noInsta and noYoutube >= noLinked and noYoutube >= noTwtr:
-            print('Youtube has the most : ', noYoutube)
+            most_popular['YOUTUBE'] = noYoutube
         elif noFb >= noYoutube and noFb >= noTtok and noFb >= noInsta and noFb >= noLinked and noFb >= noTwtr:
-            print('FB has the most : ', noFb)
+            most_popular['FACEBOOK'] = noFb
         elif noTtok >= noYoutube and noTtok >= noFb and noTtok >= noInsta and noTtok >= noLinked and noTtok >= noTwtr:
-            print('Ttok has the most : ', noTtok)
+            most_popular['TIKTOK'] = noTtok
         elif noLinked >= noInsta and noLinked >= noTtok and noLinked >= noInsta and noLinked >= noFb and noLinked >= noTwtr:
-            print('Linked has the most : ', noLinked)
+            most_popular['LINKEDIN'] = noLinked
         elif noInsta >= noYoutube and noInsta >= noTtok and noInsta >= noFb and noInsta >= noLinked and noInsta >= noTwtr:
-            print('Insta has the most : ', noInsta)
+            most_popular['INSTAGRAM'] = noInsta
         elif noTwtr >= noYoutube and noTwtr >= noTtok and noTwtr >= noInsta and noTwtr >= noLinked and noTwtr >= noFb:
-            print('Twtr has the most : ', noTwtr)
+            most_popular['TWITTER'] = noTwtr
 
+        return most_popular
 
     def calculate_mentalhealthaffect(self):
         health = self.data.col_values(11)

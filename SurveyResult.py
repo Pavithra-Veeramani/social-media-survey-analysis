@@ -1,12 +1,16 @@
 class SurveyResult:
 
     def __init__(self):
-        self.result = dict()
+        self._result = dict()
 
     def add_avg_hours(self, avgHours):
-        self.result['AverageHoursPerDay'] = avgHours
-        print(self.result)
+        self._result['AverageHoursPerDay'] = avgHours
 
+    def add_most_popular_socialmedia(self, mostPopular):
+        self._result['MostPopularSocialMedia'] = mostPopular
+
+    def get_result(self):
+        return self._result
     # @property
     # def x(self):
     #     """I'm the 'x' property."""
