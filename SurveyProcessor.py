@@ -10,7 +10,7 @@ class SurveyProcessor:
         Run a for loop to collect a valid string of data from the user
         The loop will repeatedly request data, until it is valid.
         """
-        print("Welcome to social media survey")
+       
         hours = self.data.col_values(8)
 
         totalHours = 0
@@ -25,6 +25,23 @@ class SurveyProcessor:
         average = totalHours / (len(hours)-1)
 
         print("Average time spent in Social media:", average)
+        return average
+
+    def calculate_visits_per_day(self):
+        visits = self.data.col_values(7) 
+
+        visitsperday = 0
+        for z, visit in enumerate(visits):
+            if z == 0:
+                continue
+            if visit == '':
+                continue
+            int_visit = int(visit)
+            visitsperday = visitsperday + int_visit
+
+        average = visitsperday / (len(visits)-1)
+
+        print("Average visits per day:", average)
         return average
 
 
@@ -76,6 +93,7 @@ class SurveyProcessor:
             most_popular['TWITTER'] = noTwtr
 
         return most_popular
+
 
     def calculate_mentalhealthaffect(self):
         health = self.data.col_values(11)

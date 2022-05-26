@@ -26,6 +26,10 @@ class SurveyResult:
 
     def get_result(self):
         return self._result
+
+    def visits_per_day(self, visitsperday):
+        self._result['visitsperday'] = visitsperday
+
     # @property
     # def x(self):
     #     """I'm the 'x' property."""
