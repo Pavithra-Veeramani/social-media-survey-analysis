@@ -7,10 +7,10 @@ class SurveyProcessor:
     def calculate_avg_hoursperday(self):
         """
         Get Average Number of hours spent per day across all social media sites.
-        Run a while loop to collect a valid string of data from the user
-        via the terminal, which must be a string of 6 numbers separated
-        by commas. The loop will repeatedly request data, until it is valid.
+        Run a for loop to collect a valid string of data from the user
+        The loop will repeatedly request data, until it is valid.
         """
+        print("Welcome to social media survey")
         hours = self.data.col_values(8)
 
         totalHours = 0
