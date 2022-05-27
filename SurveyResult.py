@@ -15,7 +15,7 @@ class SurveyResult:
     def consider_addicted(self, addicted):
         self._result['Consideraddicted'] = addicted
 
-    def  harass_online(self, online):
+    def harass_online(self, online):
         self._result['Harassedonline'] = online
 
     def use_after_bed(self, afterbed):

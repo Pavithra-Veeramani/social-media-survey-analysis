@@ -1,5 +1,8 @@
 # Social media survey
-[Click here to go to the live website!]
+
+Social media has become such an integral part of everyone’s life that it has almost become an addiction for most.Nearly 45% of the world's population can be found on social media according to a recent research report.
+
+[Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
 ## Table of contents 
 
 1. [Plans and structure](#plans-and-structure)

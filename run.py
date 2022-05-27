@@ -17,6 +17,20 @@ SHEET = GSPREAD_CLIENT.open('Survey_Data')
 
 survey = SHEET.worksheet('survey')
 
+def title():
+    
+    print("\u001b[35m")
+    print("Social media survey")
+    print("\n")
+
+def welcome():
+
+     #welcome message
+     title()
+     print(
+         "(\u001b[35m)Welcome to the application"
+         "Please enter a key to start the application"
+     )
 #surveyData = survey.get_all_values()
 #pprint(surveyData)
 
