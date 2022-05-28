@@ -10,33 +10,22 @@ class SurveyResult:
         self._result['MostPopularSocialMedia'] = mostPopular
 
     def mental_health_affect(self, mentalhealth):
-        self._result['Mentalhealth'] = mentalhealth
+        self._result['MentalHealth'] = mentalhealth
 
     def consider_addicted(self, addicted):
-        self._result['Consideraddicted'] = addicted
+        self._result['ConsiderAddicted'] = addicted
 
     def harass_online(self, online):
-        self._result['Harassedonline'] = online
+        self._result['HarassedOnline'] = online
 
     def use_after_bed(self, afterbed):
-        self._result['useafterbed'] = afterbed
+        self._result['UseAfterBed'] = afterbed
 
     def use_before_bed(self, beforebed):
-        self._result['usebeforebed'] = beforebed
+        self._result['UseBeforeBed'] = beforebed
 
     def get_result(self):
         return self._result
 
     def visits_per_day(self, visitsperday):
-        self._result['visitsperday'] = visitsperday
-
-    # @property
-    # def x(self):
-    #     """I'm the 'x' property."""
-    #     print("getter of x called")
-    #     return self._x
-
-    # @x.setter
-    # def x(self, value):
-    #     print("setter of x called")
-    #     self._x = value
+        self._result['VisitsPerDay'] = visitsperday
