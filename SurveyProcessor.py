@@ -23,8 +23,6 @@ class SurveyProcessor:
             totalHours = totalHours + int_hour
 
         average = totalHours / (len(hours)-1)
-
-        print("Average time spent in Social media:", average)
         return average
 
     def calculate_visits_per_day(self):
@@ -40,8 +38,6 @@ class SurveyProcessor:
             visitsperday = visitsperday + int_visit
 
         average = visitsperday / (len(visits)-1)
-
-        print("Average visits per day:", average)
         return average
 
 

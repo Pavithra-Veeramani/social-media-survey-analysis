@@ -13,71 +13,68 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('Survey_Data')
 
+SHEET = GSPREAD_CLIENT.open('Survey_Data')
 survey = SHEET.worksheet('survey')
 
-def title():
-    
-    print("\u001b[35m")
-    print("Social media survey")
-    print("\n")
+def loading():
+    print("Please wait while we are loading.. ")
 
-def welcome():
+def get_welcome_message():
 
-     #welcome message
-     title()
-     print(
-         "(\u001b[35m)Welcome to the application"
-         "Please enter a key to start the application"
-     )
-#surveyData = survey.get_all_values()
-#pprint(surveyData)
+    #welcome message
+    print("\u001b[35mWelcome to Social media survey application")
 
-def write_output():
-    workbook = xlsxwriter.Workbook('Result.xlsx')
- 
-    # The workbook object is then used to add new
-    # worksheet via the add_worksheet() method.
-    worksheet = workbook.add_worksheet()
-    
-    # Use the worksheet object to write
-    # data via the write() method.
-    worksheet.write('A1', 'Hello..')
-    
-    # Finally, close the Excel file
-    # via the close() method.
-    workbook.close()
+#Print loading message
+loading()
 
 SurveyProcessor = SurveyProcessor(survey)
 
-averageHoursPerDay = SurveyProcessor.calculate_avg_hoursperday()
+average_hour_per_day = SurveyProcessor.calculate_avg_hoursperday()
 
-mostPopular = SurveyProcessor.calculate_mostpoularsocialmedia()
+most_popular = SurveyProcessor.calculate_mostpoularsocialmedia()
 
-mentalhealth = SurveyProcessor.calculate_mentalhealthaffect()
+no_mental_health = SurveyProcessor.calculate_mentalhealthaffect()
 
-addicted = SurveyProcessor.calculate_consideraddicted()
+no_addicted = SurveyProcessor.calculate_consideraddicted()
 
-harassonline = SurveyProcessor.calculate_harasssedonline()
+no_harassed_online = SurveyProcessor.calculate_harasssedonline()
 
-afterbed = SurveyProcessor.calculate_useafterbed()
+no_after_bed = SurveyProcessor.calculate_useafterbed()
 
-beforebed = SurveyProcessor.calculate_beforebed()
+no_before_bed = SurveyProcessor.calculate_beforebed()
 
-visitsperday = SurveyProcessor.calculate_visits_per_day()
+average_visits_per_day = SurveyProcessor.calculate_visits_per_day()
 
-SurveyResult = SurveyResult()
-SurveyResult.add_avg_hours(averageHoursPerDay)
-SurveyResult.add_most_popular_socialmedia(mostPopular)
-SurveyResult.harass_online(harassonline)
-SurveyResult.mental_health_affect(mentalhealth)
-SurveyResult.use_after_bed(afterbed)
-SurveyResult.use_before_bed(beforebed)
-SurveyResult.visits_per_day(visitsperday)
-SurveyResult.consider_addicted(addicted)
+# SurveyResult = SurveyResult()
+# SurveyResult.add_avg_hours(averageHoursPerDay)
+# SurveyResult.add_most_popular_socialmedia(mostPopular)
+# SurveyResult.harass_online(harassonline)
+# SurveyResult.mental_health_affect(mentalhealth)
+# SurveyResult.use_after_bed(afterbed)
+# SurveyResult.use_before_bed(beforebed)
+# SurveyResult.visits_per_day(visitsperday)
+# SurveyResult.consider_addicted(addicted)
 
+get_welcome_message()
+user_choice = input("1 - Average hours per day. \n2 - Most popular Social Media \nPlease make a selection. \n")
 
-print(SurveyResult.get_result())
+if(user_choice == "1"):
+    print("Mot popular Social Media", most_popular)
+elif(user_choice == "2"):
+    print("Average number of hours spent by any person per day", average_hour_per_day)
+elif(user_choice == "3"):
+    print("Average number of visits made by any person per day", average_visits_per_day)
+elif(user_choice == "4"):
+    print("Number of people that use Social Media before bed", no_before_bed)
+elif(user_choice == "5"):
+    print("Number of people that use Social Media after bed", no_after_bed)
+elif(user_choice == "6"):
+    print("Number of people that consider addicted to Social Media", no_addicted)
+elif(user_choice == "7"):
+    print("Number of people that consider they were harassed online in Social Media", no_harassed_online)
+elif(user_choice == "8"):
+    print("Number of people that consider their mental health is affected because of Social Media", no_mental_health)
+#print(SurveyResult.get_result())
 
-#Use SurveyResult.get_result() and write in to another sheet in google
+#Use SurveyResult.get_result() and print output
