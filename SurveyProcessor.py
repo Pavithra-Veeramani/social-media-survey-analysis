@@ -10,7 +10,7 @@ class SurveyProcessor:
         Run a for loop to collect a valid string of data from the user
         The loop will repeatedly request data, until it is valid.
         """
-       
+
         hours = self.data.col_values(8)
 
         totalHours = 0
