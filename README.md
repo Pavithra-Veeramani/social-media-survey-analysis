@@ -6,7 +6,7 @@ Social media has become such an integral part of everyone’s life that it has a
 [Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
 ## Table of contents 
 
-1. [Program flow](#Flow chart)
+1. [Program flow](#Flow-chart)
     - [Objectives](#objectives)
 2. [Color scheme](#color-scheme)
 3. [Features](#features)
