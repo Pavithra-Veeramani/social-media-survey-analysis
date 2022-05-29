@@ -33,9 +33,10 @@ The main objective of this project is to analyse the social media survey days th
 <img src="images/flow-chart.png">
 
 ### Object
-SurveyProcessor:
+
+## SurveyProcessor:
 The responsibility of processing the sheet is given the python class called SurveyProcessor. This class' constructor takes in the google sheet as an argument. The google sheet is then processed by various methods in the SurveyProcessor.
-SurveyResult:
+## SurveyResult:
 The result of the above processing is then stored in another class called SurveyResult. This class maintains a dictionary that holds the analysed data a key-value pair. This data can then be used easily when showing the result to the user.
 
 ## Color scheme
