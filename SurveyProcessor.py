@@ -23,7 +23,7 @@ class SurveyProcessor:
             totalHours = totalHours + int_hour
 
         average = totalHours / (len(hours)-1)
-        return average
+        return round(average)
 
     def calculate_visits_per_day(self):
         visits = self.data.col_values(7)
@@ -38,7 +38,7 @@ class SurveyProcessor:
             visitsperday = visitsperday + int_visit
 
         average = visitsperday / (len(visits)-1)
-        return average
+        return round(average)
 
     def calculate_mostpoularsocialmedia(self):
         """
@@ -74,31 +74,37 @@ class SurveyProcessor:
             elif(site == 'INST'):
                 noInsta += 1
 
-        most_popular = {}
+        no_of_rows = len(self.data.get_all_values()) - 1
+        most_popular = {'total': no_of_rows}
         if(noYoutube >= noFb and noYoutube >= noTtok and
             noYoutube >= noInsta and
             noYoutube >= noLinked and noYoutube >= noTwtr):
-            most_popular['YOUTUBE'] = noYoutube
+            most_popular['name'] = 'YOUTUBE'
+            most_popular['count'] = noYoutube
         elif(noFb >= noYoutube and noFb >= noTtok and
             noFb >= noInsta and
             noFb >= noLinked and noFb >= noTwtr):
-            most_popular['FACEBOOK'] = noFb
+            most_popular['name'] = 'FACEBOOK'
+            most_popular['count'] = noFb
         elif(noTtok >= noYoutube and noTtok >= noFb and
             noTtok >= noInsta and
             noTtok >= noLinked and noTtok >= noTwtr):
-            most_popular['TIKTOK'] = noTtok
+            most_popular['name'] = 'TIKTOK'
+            most_popular['count'] = noTtok            
         elif(noLinked >= noInsta and noLinked >= noTtok and
             noLinked >= noInsta and
             noLinked >= noFb and noLinked >= noTwtr):
-            most_popular['LINKEDIN'] = noLinked
+            most_popular['count'] = noLinked
         elif(noInsta >= noYoutube and noInsta >= noTtok and
             noInsta >= noFb and
             noInsta >= noLinked and noInsta >= noTwtr):
             most_popular['INSTAGRAM'] = noInsta
+            most_popular['count'] = noInsta
         elif(noTwtr >= noYoutube and noTwtr >= noTtok and
             noTwtr >= noInsta and
             noTwtr >= noLinked and noTwtr >= noFb):
-            most_popular['TWITTER'] = noTwtr
+            most_popular['name'] = 'TWITTER'
+            most_popular['count'] = noTwtr
 
         return most_popular
 

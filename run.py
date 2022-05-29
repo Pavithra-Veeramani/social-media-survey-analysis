@@ -53,13 +53,17 @@ def get_user_input():
     print(" \u001b[36m6 - People who use social media after bed")
     print(" \u001b[36m7 - People who are addicted")
     print(" \u001b[36m8 - People who are harassed online")
-    print(" \u001b[32mOthers - Exit")
+    print(" \u001b[36mOthers - Exit")
     while True:
         user_choice = input(" Please make a selection to proceed\n")
 
         if(user_choice == "1"):
-            print(" Most popular Social Media",
-             SurveyResult.get_result()['MostPopularSocialMedia'])
+            print(" Most popular Social Media is ",
+             SurveyResult.get_result()['MostPopularSocialMedia']['name'],
+             SurveyResult.get_result()['MostPopularSocialMedia']['count'], 
+             "votes out of",
+             SurveyResult.get_result()['MostPopularSocialMedia']['total']
+             )
         elif(user_choice == "2"):
             print(" Average number of hours spent by any person per day",
              SurveyResult.get_result()['AverageHoursPerDay'])
