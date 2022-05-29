@@ -45,13 +45,14 @@ Analyis result  | General text, Green("\u001b[32m")
 ### Welcome message
 On entering the application, the user is presented with a Welcome and Loading message. While the loading message is in progress, the program connects to Google Sheet and opens the work sheet and also processes the data. This is done so that the data is processed only once at the start of the application.
 
-<img src="images/welcome-message.png">
+<img src="images/Welcome-message.png">
 
 
 ### Instructions
 On successful loading and processing of the data, the user is presented with instructions as to what options to select to get various analysed data. There are options from 1 to 8. If any other key is entered then the program exits.
 
-<img src="images/user-prompt.png">
+<img src="images/User-Prompt.png">
+
 
 ### Multiple User Prompt
 The user can get one particular data at a time. For example if they select 1, then the Most popular Social media data is shown. Then the program prompts the user to enter a different option so that the user can keep seeing other analysis results. This is achieved by using a while loop.
@@ -61,12 +62,12 @@ The user can get one particular data at a time. For example if they select 1, th
 ### Goodbye message
 After getting and viewing all the analysed data, when the user selects any other key then then a Thank you message is printed and the program exits.
 
-<img src = "images/good-bye-message">
+<img src = "images/good-bye-message.png">
 
 Go back to [Table of contents](#table-of-contents)
 
 
-## Testing
+##  Testing
 
 ### Python Validator
 The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/) 

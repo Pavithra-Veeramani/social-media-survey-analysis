@@ -57,29 +57,29 @@ def get_user_input():
     while True:
         user_choice = input(" Please make a selection to proceed\n")
 
-        if(user_choice == "1"):
-            print("Most popular Social Media",
+        if(user_choice == " 1"):
+            print(" Most popular Social Media",
              SurveyResult.get_result()['MostPopularSocialMedia'])
-        elif(user_choice == "2"):
-            print("Average number of hours spent by any person per day",
+        elif(user_choice == " 2"):
+            print(" Average number of hours spent by any person per day",
              SurveyResult.get_result()['AverageHoursPerDay'])
-        elif(user_choice == "3"):
-            print("Average number of visits made by any person per day",
+        elif(user_choice == " 3"):
+            print(" Average number of visits made by any person per day",
              SurveyResult.get_result()['VisitsPerDay'])
-        elif(user_choice == "4"):
-            print("Number of people that use Social Media before bed",
+        elif(user_choice == " 4"):
+            print(" Number of people that use Social Media before bed",
              SurveyResult.get_result()['UseBeforeBed'])
-        elif(user_choice == "5"):
-            print("Number of people that use Social Media after bed",
+        elif(user_choice == " 5"):
+            print(" Number of people that use Social Media after bed",
             SurveyResult.get_result()['UseAfterBed'])
-        elif(user_choice == "6"):
-            print("Number of people that consider addicted to Social Media",
+        elif(user_choice == " 6"):
+            print(" Number of people that consider addicted to Social Media",
              SurveyResult.get_result()['ConsiderAddicted'])
-        elif(user_choice == "7"):
-            print("Number of people that consider they were harassed online",
+        elif(user_choice == " 7"):
+            print(" Number of people that consider they were harassed online",
             "in Social Media", SurveyResult.get_result()['HarassedOnline'])
-        elif(user_choice == "8"):
-            print("Number of people that consider their mental health is",
+        elif(user_choice == " 8"):
+            print(" Number of people that consider their mental health is",
             "affected because of Social Media",
              SurveyResult.get_result()['MentalHealth'])
         else:
