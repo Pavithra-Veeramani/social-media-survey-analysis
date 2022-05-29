@@ -24,7 +24,7 @@ The Color scheme used to display the input are yellow("\u001b[33")
     
 ## Flow chart
 
-<img src="flow-chart.png">
+<img src="images/flow-chart.png">
 
 ### Objectives
 
@@ -44,40 +44,51 @@ Analyis result |
 ### Welcome message
 On entering the application, the user is presented with a Welcome and Loading message. While the loading message is in progress, the program connects to Google Sheet and opens the work sheet and also processes the data. This is done so that the data is processed only once at the start of the application.
 
+<img src="images/welcome-message.png">
+
 
 ### Instructions
 On successful loading and processing of the data, the user is presented with instructions as to what options to select to get various analysed data. There are options from 1 to 8. If any other key is entered then the program exits.
 
+<img src="images/user-prompt.png">
+
 ### Multiple User Prompt
 The user can get one particular data at a time. For example if they select 1, then the Most popular Social media data is shown. Then the program prompts the user to enter a different option so that the user can keep seeing other analysis results. This is achieved by using a while loop.
 
+<img src="images/multiple-user-prompt.png">
+
 ### Goodbye message
 After getting and viewing all the analysed data, when the user selects any other key then then a Thank you message is printed and the program exits.
+
+<img src = "images/good-bye-message">
 
 ## Testing
 
 ### Python Validator
 The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/) 
 
-The Python results came back with the following:
+All the violations were fixed except the below two
+1. continuation line under-indented for visual indent
+2. visually indented line with same indent as next logical line
 
 <img src="images/validate.png" alt="Screenshot of results">
-
-- 7x line too long 
-
-- To fix this I edited the long lines and made them into multiple shorter lines within the same print/input statement:
-    - Before example:
-    <img src="images/lines-before.png" alt="Screenshot of a line before"> 
-
-    - After example:
-    <img src="images/lines-after.png" alt="Screenshot of a line after"> 
-
-- I then retested with PEP8 and it came back clear:
-<img src="images/all-good.png" alt="pep8 after"> 
 
 
 ### Manual Testing 
 
+Scenario | Expected behaviour | Result 
+--- | --- 
+Launch the application | User should see the welcome message. | Pass
+Check the Welcome message | |
+Check Welcome message color | |
+Check the instructions | |
+Check instructions color| |
+Check whether user input was prompted | |
+Enter 1 | |
+Enter 2 | |
+Enter 3 | |
+Enter other then 1 - 8 | |
+Check thank you message | |
 
 ## Deployment 
 

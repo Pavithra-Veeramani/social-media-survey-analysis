@@ -45,15 +45,15 @@ def process_survey_data():
 
 def get_user_input():
 
-    print("1 - Most popular Social Media")
-    print("2 - Average hours per day")
-    print("3 - Average visits per day")
-    print("4 - People with mental health affect")
-    print("5 - People who use social media before bed")
-    print("6 - People who use social media after bed")
-    print("7 - People who are addicted")
-    print("8 - People who are harassed online")
-    print("Others - Exit")
+    print("\u001b[36m1 - Most popular Social Media")
+    print(" \u001b[36m2 - Average hours per day")
+    print(" \u001b[36m3 - Average visits per day")
+    print(" \u001b[36m4 - People with mental health affect")
+    print(" \u001b[36m5 - People who use social media before bed")
+    print(" \u001b[36m6 - People who use social media after bed")
+    print(" \u001b[36m7 - People who are addicted")
+    print(" \u001b[36m8 - People who are harassed online")
+    print("\u001b[31mOthers - Exit")
     while True:
         user_choice = input("Please make a selection to proceed\n")
 
