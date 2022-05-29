@@ -1,7 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from pprint import pprint
-import xlsxwriter
 from SurveyProcessor import SurveyProcessor
 from SurveyResult import SurveyResult
 
@@ -14,16 +13,10 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 
-print("Please wait while we are loading.. ")
+print("\u001b[33mWelcome to Social media survey application")
+print("Please wait while we are loading...")
 SHEET = GSPREAD_CLIENT.open('Survey_Data')
 survey = SHEET.worksheet('survey')
-
-
-
-def get_welcome_message():
-
-# welcome message
-    print("\u001b[34mWelcome to Social media survey application")
 
 SurveyProcessor = SurveyProcessor(survey)
 SurveyResult = SurveyResult()
@@ -60,12 +53,12 @@ def get_user_input():
     print("6 - People who use social media after bed")
     print("7 - People who are addicted")
     print("8 - People who are harassed online")
-    print("Any other key to exit")
+    print("Others - Exit")
     while True:
-        user_choice = input("Please make a selection. \n")
+        user_choice = input("Please make a selection to proceed\n")
 
         if(user_choice == "1"):
-            print("Mot popular Social Media",
+            print("Most popular Social Media",
              SurveyResult.get_result()['MostPopularSocialMedia'])
         elif(user_choice == "2"):
             print("Average number of hours spent by any person per day",
@@ -93,5 +86,4 @@ def get_user_input():
             break
 
 process_survey_data()
-get_welcome_message()
 get_user_input()

@@ -1,16 +1,18 @@
 # Social media survey
 
-Social media has become such an integral part of everyone’s life that it has almost become an addiction for most.Nearly 45% of the world's population can be found on social media according to a recent research report.
+Social media has become such an integral part of everyone’s life that it has almost become an addiction for most. Nearly 45% of the world's population can be found on social media according to a recent research report.
 
 [Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
 ## Table of contents 
 
-1. [Plans and structure](#plans-and-structure)
+1. [Program Flow](#Flow chart)
     - [Objectives](#objectives)
-    - [Changes throughout the process](#changes-throughout-the-process)
 2. [Color scheme](#color-scheme)
+
+The Color scheme used to display the input are yellow("\u001b[33") 
 3. [Features](#features)
-    - [Welcome page](#welcome-page)
+    - [Loading message](#loading-message)
+    - [Welcome message](#welcome-message)
     - [Instructions](#instructions) 
     - [Clear terminal](#clear-terminal)
     - [Extra features](#extra-features)
@@ -22,10 +24,32 @@ Social media has become such an integral part of everyone’s life that it has a
 6. [Finished product](#finished-product)
 7. [Credits](#credits)
     
-## Plans and structure 
+## Flow chart
+
+<img src="flow-chart.png">
+
 
 ### Objectives
-Go back to [Table of contents](#table-of-contents)
+
+The main objective of this project is to analyse the social media survey days that resides in a google sheet. The sheet has data collected from people that in diverse age group and question and answers related to their Social media usage. As part of the analysis the program determines various metrics such as average time spent by a person per day for example.
+
+## Color scheme
+
+Text | Color 
+--- | --- 
+Loading message | General text, Blue ("\033[1;34m").
+Welcome message | 
+User prompt | 
+Analyis result |
+
+## Features
+
+### Loading message
+
+### Welcome message
+
+### Instructions
+
 
 ## Deployment 
 
