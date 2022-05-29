@@ -4,6 +4,7 @@
 Social media has become such an integral part of everyone’s life that it has almost become an addiction for most. Nearly 45% of the world's population can be found on social media according to a recent research report.According to the recent study in 2020, there are 3.5 billion active social media users worldwide which are about 45 percent of the total population. Social media has both, positive and negative effects. For example, social media can be an excellent platform to advertise products and services too.It honestly depends on an individual how to use this platform.
 
 [Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
+https://docs.google.com/spreadsheets/d/1Jo2oCioJp7cLXBOX49ZvRMVBC9EUL7urbWd9FqvNPfw/edit?usp=sharing
 ## Table of contents 
 
 1. [Objective](#objectives)
@@ -56,7 +57,7 @@ On entering the application, the user is presented with a Welcome and Loading me
 <img src="images/Welcome-message.png">
 
 
-### Instructions
+### Menu
 On successful loading and processing of the data, the user is presented with instructions as to what options to select to get various analysed data. There are options from 1 to 8. If any other key is entered then the program exits.
 
 <img src="images/instructions.png">

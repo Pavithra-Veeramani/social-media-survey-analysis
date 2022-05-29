@@ -1,6 +1,7 @@
 class SurveyResult:
     """
-    
+    Using object oriented programming the class maintains a dictionary that
+     holds the analysed data a key-value pair.
     """
 
     def __init__(self):

@@ -78,31 +78,31 @@ class SurveyProcessor:
         most_popular = {'total': no_of_rows}
         if(noYoutube >= noFb and noYoutube >= noTtok and
             noYoutube >= noInsta and
-            noYoutube >= noLinked and noYoutube >= noTwtr):
+                noYoutube >= noLinked and noYoutube >= noTwtr):
             most_popular['name'] = 'YOUTUBE'
             most_popular['count'] = noYoutube
         elif(noFb >= noYoutube and noFb >= noTtok and
-            noFb >= noInsta and
-            noFb >= noLinked and noFb >= noTwtr):
+                noFb >= noInsta and
+                noFb >= noLinked and noFb >= noTwtr):
             most_popular['name'] = 'FACEBOOK'
             most_popular['count'] = noFb
         elif(noTtok >= noYoutube and noTtok >= noFb and
-            noTtok >= noInsta and
-            noTtok >= noLinked and noTtok >= noTwtr):
+             noTtok >= noInsta and
+                noTtok >= noLinked and noTtok >= noTwtr):
             most_popular['name'] = 'TIKTOK'
-            most_popular['count'] = noTtok            
+            most_popular['count'] = noTtok  
         elif(noLinked >= noInsta and noLinked >= noTtok and
-            noLinked >= noInsta and
-            noLinked >= noFb and noLinked >= noTwtr):
+                noLinked >= noInsta and
+                noLinked >= noFb and noLinked >= noTwtr):
             most_popular['count'] = noLinked
         elif(noInsta >= noYoutube and noInsta >= noTtok and
-            noInsta >= noFb and
-            noInsta >= noLinked and noInsta >= noTwtr):
+                noInsta >= noFb and
+                noInsta >= noLinked and noInsta >= noTwtr):
             most_popular['INSTAGRAM'] = noInsta
             most_popular['count'] = noInsta
         elif(noTwtr >= noYoutube and noTwtr >= noTtok and
-            noTwtr >= noInsta and
-            noTwtr >= noLinked and noTwtr >= noFb):
+                noTwtr >= noInsta and
+                noTwtr >= noLinked and noTwtr >= noFb):
             most_popular['name'] = 'TWITTER'
             most_popular['count'] = noTwtr
 
@@ -164,4 +164,4 @@ class SurveyProcessor:
             if z == 'Y':
                 before += 1
 
-        return before
+        return before        

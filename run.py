@@ -1,3 +1,7 @@
+"""
+In order to use our Google Sheets API, we to need to install
+additional dependencies into our project.
+"""
 import gspread
 from google.oauth2.service_account import Credentials
 from pprint import pprint
@@ -58,34 +62,49 @@ def get_user_input():
         user_choice = input(" Please make a selection to proceed\n")
 
         if(user_choice == "1"):
-            print(" Most popular Social Media is ",
-             SurveyResult.get_result()['MostPopularSocialMedia']['name'],
-             SurveyResult.get_result()['MostPopularSocialMedia']['count'], 
-             "votes out of",
-             SurveyResult.get_result()['MostPopularSocialMedia']['total']
-             )
+            print(
+                " Most popular Social Media is ",
+                SurveyResult.get_result()['MostPopularSocialMedia']['name'],
+                SurveyResult.get_result()['MostPopularSocialMedia']['count'],
+                "votes out of",
+                SurveyResult.get_result()['MostPopularSocialMedia']['total']
+            )
         elif(user_choice == "2"):
-            print(" Average number of hours spent by any person per day",
-             SurveyResult.get_result()['AverageHoursPerDay'])
+            print(
+                " Average number of hours spent by any person per day",
+                SurveyResult.get_result()['AverageHoursPerDay']
+            )
         elif(user_choice == "3"):
-            print(" Average number of visits made by any person per day",
-             SurveyResult.get_result()['VisitsPerDay'])
+            print(
+                " Average number of visits made by any person per day",
+                SurveyResult.get_result()['VisitsPerDay']
+            )
         elif(user_choice == "4"):
-            print(" Number of people that use Social Media before bed",
-             SurveyResult.get_result()['UseBeforeBed'])
+            print(
+                " Number of people that use Social Media before bed",
+                SurveyResult.get_result()['UseBeforeBed']
+            )
         elif(user_choice == "5"):
-            print(" Number of people that use Social Media after bed",
-            SurveyResult.get_result()['UseAfterBed'])
+            print(
+                " Number of people that use Social Media after bed",
+                SurveyResult.get_result()['UseAfterBed']
+            )
         elif(user_choice == "6"):
-            print(" Number of people that consider addicted to Social Media",
-             SurveyResult.get_result()['ConsiderAddicted'])
+            print(
+                " Number of people that consider addicted to Social Media",
+                SurveyResult.get_result()['ConsiderAddicted']
+            )
         elif(user_choice == "7"):
-            print(" Number of people that consider they were harassed online",
-            "in Social Media", SurveyResult.get_result()['HarassedOnline'])
+            print(
+                " Number of people that consider they were harassed online",
+                "in Social Media", SurveyResult.get_result()['HarassedOnline']
+            )
         elif(user_choice == " 8"):
-            print(" Number of people that consider their mental health is",
-            "affected because of Social Media",
-             SurveyResult.get_result()['MentalHealth'])
+            print(
+                " Number of people that consider their mental health is",
+                "affected because of Social Media",
+                SurveyResult.get_result()['MentalHealth']
+            )
         else:
             print(" \u001b[33mThank you for using our Social Media Analysis.")
             break
