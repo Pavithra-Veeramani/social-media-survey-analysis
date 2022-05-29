@@ -96,29 +96,29 @@ The Python programs were statically analyed tested using PEP8 [PEP8 validator](h
 
 ### run.py - before
 
-<img src = "images/run.py-before.png" width = "300">
+<img src = "images/run.py-before.png" width = "600">
 
 ### surveyProcessor.py - before
 
-<img src = "images/survey-processor-before.png" width = "300">
+<img src = "images/survey-processor-before.png" width = "600">
 
 ### surveyResult.py - before
 
-<img src = "images/survey-result-before.png" width = "300">
+<img src = "images/survey-result-before.png" width = "600">
 
 Initially there were violations related to indentation and trailing white spaces. All these violations were later fixed.
 
 ###  run.py - after
 
-<img src = "images/run.py-after.png" width = "300">
+<img src = "images/run.py-after.png" width = "600">
 
 ### surveyProcessor.py - after
 
-<img src = "images/survey-processor-after.png" width = "300">
+<img src = "images/survey-processor-after.png" width = "600">
 
 ### surveyResult.py - after
 
-<img src = "images/survey-result-after.png" width = "300">
+<img src = "images/survey-result-after.png" width = "600">
 
 
 
