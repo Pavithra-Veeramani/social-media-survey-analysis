@@ -1,11 +1,12 @@
 # Social media survey
+![Social media survey responsive images](images/am-i-responsive.png)
 
-Social media has become such an integral part of everyone’s life that it has almost become an addiction for most. Nearly 45% of the world's population can be found on social media according to a recent research report.
+Social media has become such an integral part of everyone’s life that it has almost become an addiction for most. Nearly 45% of the world's population can be found on social media according to a recent research report.According to the recent study in 2020, there are 3.5 billion active social media users worldwide which are about 45 percent of the total population. Social media has both, positive and negative effects. For example, social media can be an excellent platform to advertise products and services too.It honestly depends on an individual how to use this platform.
 
 [Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
 ## Table of contents 
 
-1. [Program Flow](#Flow chart)
+1. [Program flow](#Flow chart)
     - [Objectives](#objectives)
 2. [Color scheme](#color-scheme)
 3. [Features](#features)
@@ -35,9 +36,9 @@ Go back to [Table of contents](#table-of-contents)
 
 Text | Color 
 --- | --- 
-Loading message | General text, Blue ("\033[1;34m").
+Loading message | General text, Yellow ("\u001b[31m")
 Welcome message | General text, Yellow ("\u001b[31m")
-User prompt     | General text, Green("\u001b[32m")
+User prompt     | General text, Cyan("\u001b[36m")
 Analyis result  | General text, Green("\u001b[32m")
 
 ## Features
@@ -51,7 +52,7 @@ On entering the application, the user is presented with a Welcome and Loading me
 ### Instructions
 On successful loading and processing of the data, the user is presented with instructions as to what options to select to get various analysed data. There are options from 1 to 8. If any other key is entered then the program exits.
 
-<img src="images/User-Prompt.png">
+<img src="images/instructions.png">
 
 
 ### Multiple User Prompt
@@ -76,9 +77,6 @@ All the violations were fixed except the below two
 1. continuation line under-indented for visual indent
 2. visually indented line with same indent as next logical line
 
-<img src="images/validate.png" alt="Screenshot of results">
-
-
 ### Manual Testing 
 
 Scenario | Expected behaviour | Result 
@@ -92,7 +90,11 @@ Check whether user input was prompted | Shows the correct input data | Pass
 Enter 1 | Most popular social media | Pass
 Enter 2 | Average hours per day | Pass
 Enter 3 | Aveerage visits per day | Pass
-Enter other then 1 - 8 | Exit message | Pass
+Enter 4 | People with mental health affect | Pass
+Enter 5 | People who use social media before bed | Pass
+Enter 6 | People who use social media after bed | Pass
+Enter 7 | People who are addicted | Pass
+Enter 8 | People who are harassed online | Pass
 Check thank you message | Shows thank you message | Pass
 
 Go back to [Table of contents](#table-of-contents)
@@ -128,6 +130,11 @@ There were many steps to deploying this project to Heroku:
 12. When all the code is received from github there is a view button that it a link to the running app, I clicked this to make sure everything was running as expected.
 
 Go back to [Table of contents](#table-of-contents)
+
+## Finished product
+
+<img src="images/finished-product.png">
+
 ## Credits 
 
 [Lucid chart](https://www.lucidchart.com/pages/) - Lucid chart was used to create flowchart for designing my project.

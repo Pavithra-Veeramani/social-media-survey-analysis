@@ -1,4 +1,7 @@
 class SurveyResult:
+    """
+    
+    """
 
     def __init__(self):
         self._result = dict()

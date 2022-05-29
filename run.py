@@ -78,7 +78,7 @@ def get_user_input():
         elif(user_choice == "7"):
             print(" Number of people that consider they were harassed online",
             "in Social Media", SurveyResult.get_result()['HarassedOnline'])
-        elif(user_choice == "8"):
+        elif(user_choice == " 8"):
             print(" Number of people that consider their mental health is",
             "affected because of Social Media",
              SurveyResult.get_result()['MentalHealth'])
