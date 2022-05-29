@@ -90,7 +90,7 @@ class SurveyProcessor:
              noTtok >= noInsta and
                 noTtok >= noLinked and noTtok >= noTwtr):
             most_popular['name'] = 'TIKTOK'
-            most_popular['count'] = noTtok  
+            most_popular['count'] = noTtok
         elif(noLinked >= noInsta and noLinked >= noTtok and
                 noLinked >= noInsta and
                 noLinked >= noFb and noLinked >= noTwtr):
@@ -164,4 +164,4 @@ class SurveyProcessor:
             if z == 'Y':
                 before += 1
 
-        return before        
+        return before

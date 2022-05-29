@@ -18,13 +18,14 @@ Social media has become such an integral part of everyone’s life that it has a
     - [Instructions](#instructions)
     - [Multiple user data](#multiple-user-prompt)
     - [Goodbye message](#goodbye-message)
-5. [Testing](#testing)
+5. [Utilities used](#utilities-used)
+6. [Testing](#testing)
     - [Python](#python-validator)
     - [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
-6. [Deployment](#deployment)
-7. [Finished product](#finished-product)
-8. [Credits](#credits)
+7. [Deployment](#deployment)
+8. [Finished product](#finished-product)
+9. [Credits](#credits)
 
 
 ## Objective
@@ -35,11 +36,11 @@ The main objective of this project is to analyse the social media survey days th
 
 <img src="images/flow-chart.png">
 
-### Object
+## Object
 
-## SurveyProcessor:
+### SurveyProcessor:
 The responsibility of processing the sheet is given the python class called SurveyProcessor. This class' constructor takes in the google sheet as an argument. The google sheet is then processed by various methods in the SurveyProcessor.
-## SurveyResult:
+### SurveyResult:
 The result of the above processing is then stored in another class called SurveyResult. This class maintains a dictionary that holds the analysed data a key-value pair. This data can then be used easily when showing the result to the user.
 
 ## Color scheme
@@ -78,6 +79,16 @@ After getting and viewing all the analysed data, when the user selects any other
 Go back to [Table of contents](#table-of-contents)
 
 
+## Utilities Used
+
+### gspread
+gspread is a open source Python API for Google Sheets. This is used in the project to read the survey data from google sheet.
+
+(https://docs.gspread.org/en/latest/)
+
+### Google OAuth 2.0
+google.oauth2.service_account is used for authentication while accessing the google sheet.
+
 ##  Testing
 
 ### Python Validator
@@ -108,8 +119,6 @@ Enter 8 | People who are harassed online | Pass
 Enter other keys | Program should exit | Pass
 Enter other keys | Thank you mesage printed | Pass
 Check Thank you message | Shows thank you message | Pass
-
-Go back to [Table of contents](#table-of-contents)
 
 
 ## Deployment 

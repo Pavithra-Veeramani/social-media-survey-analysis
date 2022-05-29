@@ -4,7 +4,6 @@ additional dependencies into our project.
 """
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 from SurveyProcessor import SurveyProcessor
 from SurveyResult import SurveyResult
 
@@ -106,8 +105,10 @@ def get_user_input():
                 SurveyResult.get_result()['MentalHealth']
             )
         else:
-            print(" \u001b[33mApplication exited. To run the program again,",
-            "press the button at the top.")
+            print(
+                " \u001b[33mApplication exited. To run the program again,",
+                "press the button at the top."
+            )
             print(" \u001b[33mThank you for using our Social Media Analysis.")
             break
 
