@@ -6,31 +6,36 @@ Social media has become such an integral part of everyone’s life that it has a
 [Click here to go to the live website!](https://social-media-survey-analysis.herokuapp.com/)
 ## Table of contents 
 
-1. [Program flow](#Flow-chart)
-    - [Objectives](#objectives)
-2. [Color scheme](#color-scheme)
-3. [Features](#features)
+1. [Objective](#objectives)
+2. [Program flow](#Flow-chart)
+    - [Object Oriented](#object)
+3. [Color scheme](#color-scheme)
+4. [Features](#features)
     - [Welcome message](#welcome-message)
     - [Instructions](#instructions) 
     - [Goodbye message](#goodbye-message)
-4. [Testing](#testing)
+5. [Testing](#testing)
     - [Python](#python-validator)
     - [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
-5. [Deployment](#deployment)
-6. [Finished product](#finished-product)
-7. [Credits](#credits)
-    
+6. [Deployment](#deployment)
+7. [Finished product](#finished-product)
+8. [Credits](#credits)
+
+
+## Objective
+
+The main objective of this project is to analyse the social media survey days that resides in a google sheet. The sheet has data collected from people that in diverse age group and question and answers related to their Social media usage. As part of the analysis the program determines various metrics such as average time spent by a person per day for example.
+
 ## Flow chart
 
 <img src="images/flow-chart.png">
 
-### Objectives
-
-The main objective of this project is to analyse the social media survey days that resides in a google sheet. The sheet has data collected from people that in diverse age group and question and answers related to their Social media usage. As part of the analysis the program determines various metrics such as average time spent by a person per day for example.
-
-Go back to [Table of contents](#table-of-contents)
-
+### Object
+SurveyProcessor:
+The responsibility of processing the sheet is given the python class called SurveyProcessor. This class' constructor takes in the google sheet as an argument. The google sheet is then processed by various methods in the SurveyProcessor.
+SurveyResult:
+The result of the above processing is then stored in another class called SurveyResult. This class maintains a dictionary that holds the analysed data a key-value pair. This data can then be used easily when showing the result to the user.
 
 ## Color scheme
 
@@ -95,7 +100,9 @@ Enter 5 | People who use social media before bed | Pass
 Enter 6 | People who use social media after bed | Pass
 Enter 7 | People who are addicted | Pass
 Enter 8 | People who are harassed online | Pass
-Check thank you message | Shows thank you message | Pass
+Enter other keys | Program should exit | Pass
+Enter other keys | Thank you mesage printed | Pass
+Check Thank you message | Shows thank you message | Pass
 
 Go back to [Table of contents](#table-of-contents)
 
