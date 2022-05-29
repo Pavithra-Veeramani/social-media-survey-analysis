@@ -92,9 +92,35 @@ google.oauth2.service_account is used for authentication while accessing the goo
 ##  Testing
 
 ### Python Validator
-The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/) 
+The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/)
+
+### run.py - before
+
+<img src = "images/run.py-before.png" width = "300">
+
+### surveyProcessor.py - before
+
+<img src = "images/survey-processor-before.png" width = "300">
+
+### surveyResult.py - before
+
+<img src = "images/survey-result-before.png" width = "300">
 
 Initially there were violations related to indentation and trailing white spaces. All these violations were later fixed.
+
+###  run.py - after
+
+<img src = "images/run.py-after.png" width = "300">
+
+### surveyProcessor.py - after
+
+<img src = "images/survey-processor-after.png" width = "300">
+
+### surveyResult.py - after
+
+<img src = "images/survey-result-after.png" width = "300">
+
+
 
 ### Manual Testing 
 
@@ -108,7 +134,7 @@ Check instructions color| Displays in cyan color | Pass
 Check whether user input was prompted | Shows the correct input data | Pass
 Enter 1 | Most popular social media | Pass
 Enter 2 | Average hours per day | Pass
-Enter 3 | Aveerage visits per day | Pass
+Enter 3 | Average visits per day | Pass
 Enter 4 | People with mental health affect | Pass
 Enter 5 | People who use social media before bed | Pass
 Enter 6 | People who use social media after bed | Pass

@@ -26,6 +26,9 @@ SurveyResult = SurveyResult()
 
 
 def process_survey_data():
+    """
+    Calculate the data from survey processor and store it in the survey result 
+    """
 
     average_hour_per_day = SurveyProcessor.calculate_avg_hoursperday()
     most_popular = SurveyProcessor.calculate_mostpoularsocialmedia()
@@ -47,6 +50,9 @@ def process_survey_data():
 
 
 def get_user_input():
+    """
+    Get user input by entering number from 1 to 8.
+    """
 
     print(" \u001b[36m1 - Most popular Social Media")
     print(" \u001b[36m2 - Average hours per day")

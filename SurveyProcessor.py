@@ -1,6 +1,5 @@
 class SurveyProcessor:
 
-    
     def __init__(self, data):
         self.data = data
 
@@ -26,6 +25,11 @@ class SurveyProcessor:
         return round(average)
 
     def calculate_visits_per_day(self):
+        """
+        Get Average Number of visits per day across all social media
+        sites.Run a for loop to collect a valid data from the
+        user. 
+        """
         visits = self.data.col_values(7)
 
         visitsperday = 0
@@ -42,11 +46,9 @@ class SurveyProcessor:
 
     def calculate_mostpoularsocialmedia(self):
         """
-        Get Average Number of hours spent per day across all social media
-        sites. Run a while loop to collect a valid string of data from
-        the user via the terminal, which must be a string of 6 numbers
-        separated by commas. The loop will repeatedly request data,
-        until it is valid.
+        Calculate most popular social media across all social media
+        sites. Run a for loop to collect a valid data from
+        the user via the terminal.
         """
         sites = self.data.col_values(5)
 
@@ -109,6 +111,10 @@ class SurveyProcessor:
         return most_popular
 
     def calculate_mentalhealthaffect(self):
+        """
+        Calculate mental health affect of the people. Run a for loop to collect
+        a valid data from the user via the terminal.
+        """
         health = self.data.col_values(11)
 
         affects = 0
@@ -119,6 +125,10 @@ class SurveyProcessor:
         return affects
 
     def calculate_consideraddicted(self):
+        """
+        Calculate people who are consider affected. Run a for loop to collect 
+        a valid data from the user via the terminal.
+        """
 
         addict = self.data.col_values(13)
 
@@ -131,6 +141,10 @@ class SurveyProcessor:
         return consider
 
     def calculate_harasssedonline(self):
+        """
+        Calculate people who are harassed online. Run a for loop to collect 
+        a valid data from the user via the terminal.
+        """
 
         harass = self.data.col_values(12)
 
@@ -143,6 +157,10 @@ class SurveyProcessor:
         return online
 
     def calculate_useafterbed(self):
+        """
+        Calculate the data of people who use social media after bed. Run a for loop to collect a valid data from
+        the user via the terminal.
+        """
 
         useafter = self.data.col_values(10)
 
@@ -155,6 +173,10 @@ class SurveyProcessor:
         return after
 
     def calculate_beforebed(self):
+        """
+        Calculate the data of people who use social media before bed. Run a for loop to collect a valid data from
+        the user via the terminal.
+        """
 
         beforebed = self.data.col_values(9)
 
