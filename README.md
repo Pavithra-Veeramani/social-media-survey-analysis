@@ -160,7 +160,9 @@ Go back to [Table of contents](#table-of-contents)
 
 [PEP8 validator](http://pep8online.com/) - Pep8 validator is used to validate the code.
 
-[Google](https://www.google.ie/) - I used Google to get an idea for my project.
+[https://www.w3schools.com/python/default.asp] - I referred w3schools website to lookup some of Python features.
+
+[https://docs.gspread.org/en/latest/user-guide.html] - gspread user guide was helpful too.
 
 Mentor - I thank my mentor Marcel for his support and guidance for this project.  
 
