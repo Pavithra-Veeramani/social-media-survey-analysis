@@ -110,15 +110,15 @@ Initially there were violations related to indentation and trailing white spaces
 
 ###  run.py - after
 
-<img src = "images/run.py-after.png" width = "600">
+<img src = "images/run.py-after.png" width = "800">
 
 ### surveyProcessor.py - after
 
-<img src = "images/survey-processor-after.png" width = "600">
+<img src = "images/survey-processor-after.png" width = "800">
 
 ### surveyResult.py - after
 
-<img src = "images/survey-result-after.png" width = "600">
+<img src = "images/survey-result-after.png" width = "800">
 
 
 
