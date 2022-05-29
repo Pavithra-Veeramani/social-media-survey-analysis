@@ -11,13 +11,11 @@ Social media has become such an integral part of everyone’s life that it has a
 
 The Color scheme used to display the input are yellow("\u001b[33") 
 3. [Features](#features)
-    - [Loading message](#loading-message)
     - [Welcome message](#welcome-message)
     - [Instructions](#instructions) 
-    - [Clear terminal](#clear-terminal)
-    - [Extra features](#extra-features)
+    - [Goodbye message](#goodbye-message)
 4. [Testing](#testing)
-    - [Python](#python)
+    - [Python](#python-validator)
     - [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
 5. [Deployment](#deployment)
@@ -27,7 +25,6 @@ The Color scheme used to display the input are yellow("\u001b[33")
 ## Flow chart
 
 <img src="flow-chart.png">
-
 
 ### Objectives
 
@@ -44,11 +41,42 @@ Analyis result |
 
 ## Features
 
-### Loading message
-
 ### Welcome message
+On entering the application, the user is presented with a Welcome and Loading message. While the loading message is in progress, the program connects to Google Sheet and opens the work sheet and also processes the data. This is done so that the data is processed only once at the start of the application.
+
 
 ### Instructions
+On successful loading and processing of the data, the user is presented with instructions as to what options to select to get various analysed data. There are options from 1 to 8. If any other key is entered then the program exits.
+
+### Multiple User Prompt
+The user can get one particular data at a time. For example if they select 1, then the Most popular Social media data is shown. Then the program prompts the user to enter a different option so that the user can keep seeing other analysis results. This is achieved by using a while loop.
+
+### Goodbye message
+After getting and viewing all the analysed data, when the user selects any other key then then a Thank you message is printed and the program exits.
+
+## Testing
+
+### Python Validator
+The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/) 
+
+The Python results came back with the following:
+
+<img src="images/validate.png" alt="Screenshot of results">
+
+- 7x line too long 
+
+- To fix this I edited the long lines and made them into multiple shorter lines within the same print/input statement:
+    - Before example:
+    <img src="images/lines-before.png" alt="Screenshot of a line before"> 
+
+    - After example:
+    <img src="images/lines-after.png" alt="Screenshot of a line after"> 
+
+- I then retested with PEP8 and it came back clear:
+<img src="images/all-good.png" alt="pep8 after"> 
+
+
+### Manual Testing 
 
 
 ## Deployment 

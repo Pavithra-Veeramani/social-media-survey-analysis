@@ -6,9 +6,9 @@ class SurveyProcessor:
 
     def calculate_avg_hoursperday(self):
         """
-        Get Average Number of hours spent per day across all social media sites.
-        Run a for loop to collect a valid string of data from the user
-        The loop will repeatedly request data, until it is valid.
+        Get Average Number of hours spent per day across all social media
+        sites.Run a for loop to collect a valid string of data from the
+        user. The loop will repeatedly request data, until it is valid.
         """
 
         hours = self.data.col_values(8)
@@ -26,7 +26,7 @@ class SurveyProcessor:
         return average
 
     def calculate_visits_per_day(self):
-        visits = self.data.col_values(7) 
+        visits = self.data.col_values(7)
 
         visitsperday = 0
         for z, visit in enumerate(visits):
@@ -40,13 +40,13 @@ class SurveyProcessor:
         average = visitsperday / (len(visits)-1)
         return average
 
-
     def calculate_mostpoularsocialmedia(self):
         """
-        Get Average Number of hours spent per day across all social media sites.
-        Run a while loop to collect a valid string of data from the user
-        via the terminal, which must be a string of 6 numbers separated
-        by commas. The loop will repeatedly request data, until it is valid.
+        Get Average Number of hours spent per day across all social media
+        sites. Run a while loop to collect a valid string of data from
+        the user via the terminal, which must be a string of 6 numbers
+        separated by commas. The loop will repeatedly request data,
+        until it is valid.
         """
         sites = self.data.col_values(5)
 
@@ -75,21 +75,32 @@ class SurveyProcessor:
                 noInsta += 1
 
         most_popular = {}
-        if noYoutube >= noFb and noYoutube >= noTtok and noYoutube >= noInsta and noYoutube >= noLinked and noYoutube >= noTwtr:
+        if(noYoutube >= noFb and noYoutube >= noTtok and
+            noYoutube >= noInsta and
+            noYoutube >= noLinked and noYoutube >= noTwtr):
             most_popular['YOUTUBE'] = noYoutube
-        elif noFb >= noYoutube and noFb >= noTtok and noFb >= noInsta and noFb >= noLinked and noFb >= noTwtr:
+        elif(noFb >= noYoutube and noFb >= noTtok and
+            noFb >= noInsta and
+            noFb >= noLinked and noFb >= noTwtr):
             most_popular['FACEBOOK'] = noFb
-        elif noTtok >= noYoutube and noTtok >= noFb and noTtok >= noInsta and noTtok >= noLinked and noTtok >= noTwtr:
+        elif(noTtok >= noYoutube and noTtok >= noFb and
+            noTtok >= noInsta and
+            noTtok >= noLinked and noTtok >= noTwtr):
             most_popular['TIKTOK'] = noTtok
-        elif noLinked >= noInsta and noLinked >= noTtok and noLinked >= noInsta and noLinked >= noFb and noLinked >= noTwtr:
+        elif(noLinked >= noInsta and noLinked >= noTtok and
+            noLinked >= noInsta and
+            noLinked >= noFb and noLinked >= noTwtr):
             most_popular['LINKEDIN'] = noLinked
-        elif noInsta >= noYoutube and noInsta >= noTtok and noInsta >= noFb and noInsta >= noLinked and noInsta >= noTwtr:
+        elif(noInsta >= noYoutube and noInsta >= noTtok and
+            noInsta >= noFb and
+            noInsta >= noLinked and noInsta >= noTwtr):
             most_popular['INSTAGRAM'] = noInsta
-        elif noTwtr >= noYoutube and noTwtr >= noTtok and noTwtr >= noInsta and noTwtr >= noLinked and noTwtr >= noFb:
+        elif(noTwtr >= noYoutube and noTwtr >= noTtok and
+            noTwtr >= noInsta and
+            noTwtr >= noLinked and noTwtr >= noFb):
             most_popular['TWITTER'] = noTwtr
 
         return most_popular
-
 
     def calculate_mentalhealthaffect(self):
         health = self.data.col_values(11)
@@ -100,7 +111,6 @@ class SurveyProcessor:
                 affects += 1
 
         return affects
-        
 
     def calculate_consideraddicted(self):
 

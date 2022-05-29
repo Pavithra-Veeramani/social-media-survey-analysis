@@ -70,16 +70,17 @@ def get_user_input():
             print("Number of people that use Social Media before bed",
              SurveyResult.get_result()['UseBeforeBed'])
         elif(user_choice == "5"):
-            print("Number of people that use Social Media after bed", 
+            print("Number of people that use Social Media after bed",
             SurveyResult.get_result()['UseAfterBed'])
         elif(user_choice == "6"):
             print("Number of people that consider addicted to Social Media",
              SurveyResult.get_result()['ConsiderAddicted'])
         elif(user_choice == "7"):
-            print("Number of people that consider they were harassed online in Social Media", 
-            SurveyResult.get_result()['HarassedOnline'])
+            print("Number of people that consider they were harassed online",
+            "in Social Media", SurveyResult.get_result()['HarassedOnline'])
         elif(user_choice == "8"):
-            print("Number of people that consider their mental health is affected because of Social Media",
+            print("Number of people that consider their mental health is",
+            "affected because of Social Media",
              SurveyResult.get_result()['MentalHealth'])
         else:
             print("Thank you for using our Social Media Analysis.")
