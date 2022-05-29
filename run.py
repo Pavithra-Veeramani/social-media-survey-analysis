@@ -58,7 +58,7 @@ def get_user_input():
     print(" \u001b[36m8 - People who are harassed online")
     print(" \u001b[36mOthers - Exit")
     while True:
-        user_choice = input(" Please make a selection to proceed\n")
+        user_choice = input(" Please make a selection\n")
 
         if(user_choice == "1"):
             print(
@@ -98,7 +98,7 @@ def get_user_input():
                 " Number of people that consider they were harassed online",
                 "in Social Media", SurveyResult.get_result()['HarassedOnline']
             )
-        elif(user_choice == " 8"):
+        elif(user_choice == "8"):
             print(
                 " Number of people that consider their mental health is",
                 "affected because of Social Media",

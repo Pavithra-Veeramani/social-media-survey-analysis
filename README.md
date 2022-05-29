@@ -94,9 +94,7 @@ google.oauth2.service_account is used for authentication while accessing the goo
 ### Python Validator
 The Python programs were statically analyed tested using PEP8 [PEP8 validator](http://pep8online.com/) 
 
-All the violations were fixed except the below two
-1. continuation line under-indented for visual indent
-2. visually indented line with same indent as next logical line
+Initially there were violations related to indentation and trailing white spaces. All these violations were later fixed.
 
 ### Manual Testing 
 

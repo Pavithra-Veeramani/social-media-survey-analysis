@@ -1,6 +1,6 @@
 class SurveyProcessor:
 
-    # Instance attribute for the Data
+    
     def __init__(self, data):
         self.data = data
 
