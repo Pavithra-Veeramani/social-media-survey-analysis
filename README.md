@@ -8,8 +8,6 @@ Social media has become such an integral part of everyone’s life that it has a
 1. [Program Flow](#Flow chart)
     - [Objectives](#objectives)
 2. [Color scheme](#color-scheme)
-
-The Color scheme used to display the input are yellow("\u001b[33") 
 3. [Features](#features)
     - [Welcome message](#welcome-message)
     - [Instructions](#instructions) 
@@ -30,14 +28,17 @@ The Color scheme used to display the input are yellow("\u001b[33")
 
 The main objective of this project is to analyse the social media survey days that resides in a google sheet. The sheet has data collected from people that in diverse age group and question and answers related to their Social media usage. As part of the analysis the program determines various metrics such as average time spent by a person per day for example.
 
+Go back to [Table of contents](#table-of-contents)
+
+
 ## Color scheme
 
 Text | Color 
 --- | --- 
 Loading message | General text, Blue ("\033[1;34m").
-Welcome message | 
-User prompt | 
-Analyis result |
+Welcome message | General text, Yellow ("\u001b[31m")
+User prompt     | General text, Green("\u001b[32m")
+Analyis result  | General text, Green("\u001b[32m")
 
 ## Features
 
@@ -62,6 +63,9 @@ After getting and viewing all the analysed data, when the user selects any other
 
 <img src = "images/good-bye-message">
 
+Go back to [Table of contents](#table-of-contents)
+
+
 ## Testing
 
 ### Python Validator
@@ -77,18 +81,21 @@ All the violations were fixed except the below two
 ### Manual Testing 
 
 Scenario | Expected behaviour | Result 
---- | --- 
+--- | --- | ---
 Launch the application | User should see the welcome message. | Pass
-Check the Welcome message | |
-Check Welcome message color | |
-Check the instructions | |
-Check instructions color| |
-Check whether user input was prompted | |
-Enter 1 | |
-Enter 2 | |
-Enter 3 | |
-Enter other then 1 - 8 | |
-Check thank you message | |
+Check the Welcome message | Shows welcome message | Pass
+Check Welcome message color | Displays in yellow color | Pass
+Check the instructions | Shows instructions | Pass
+Check instructions color| Displays in cyan color | Pass
+Check whether user input was prompted | Shows the correct input data | Pass
+Enter 1 | Most popular social media | Pass
+Enter 2 | Average hours per day | Pass
+Enter 3 | Aveerage visits per day | Pass
+Enter other then 1 - 8 | Exit message | Pass
+Check thank you message | Shows thank you message | Pass
+
+Go back to [Table of contents](#table-of-contents)
+
 
 ## Deployment 
 
@@ -129,3 +136,6 @@ Go back to [Table of contents](#table-of-contents)
 [Google](https://www.google.ie/) - I used Google to get an idea for my project.
 
 Mentor - I thank my mentor Marcel for his support and guidance for this project.  
+
+Go back to [Table of contents](#table-of-contents)
+

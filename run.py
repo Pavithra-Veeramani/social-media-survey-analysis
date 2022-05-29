@@ -13,8 +13,8 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 
-print("\u001b[33mWelcome to Social media survey application")
-print("Please wait while we are loading...")
+print(" \u001b[33mWelcome to Social media survey application")
+print(" Please wait while we are loading...")
 SHEET = GSPREAD_CLIENT.open('Survey_Data')
 survey = SHEET.worksheet('survey')
 
@@ -45,7 +45,7 @@ def process_survey_data():
 
 def get_user_input():
 
-    print("\u001b[36m1 - Most popular Social Media")
+    print(" \u001b[36m1 - Most popular Social Media")
     print(" \u001b[36m2 - Average hours per day")
     print(" \u001b[36m3 - Average visits per day")
     print(" \u001b[36m4 - People with mental health affect")
@@ -53,9 +53,9 @@ def get_user_input():
     print(" \u001b[36m6 - People who use social media after bed")
     print(" \u001b[36m7 - People who are addicted")
     print(" \u001b[36m8 - People who are harassed online")
-    print("\u001b[31mOthers - Exit")
+    print(" \u001b[32mOthers - Exit")
     while True:
-        user_choice = input("Please make a selection to proceed\n")
+        user_choice = input(" Please make a selection to proceed\n")
 
         if(user_choice == "1"):
             print("Most popular Social Media",
@@ -83,7 +83,7 @@ def get_user_input():
             "affected because of Social Media",
              SurveyResult.get_result()['MentalHealth'])
         else:
-            print("Thank you for using our Social Media Analysis.")
+            print(" \u001b[33mThank you for using our Social Media Analysis.")
             break
 
 process_survey_data()
