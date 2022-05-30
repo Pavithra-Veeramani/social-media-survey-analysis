@@ -50,7 +50,7 @@ Text | Color
 Loading message | General text, Yellow ("\u001b[31m")
 Welcome message | General text, Yellow ("\u001b[31m")
 User prompt     | General text, Cyan("\u001b[36m")
-Analyis result  | General text, Green("\u001b[32m")
+Analyis result  | General text, Cyan("\u001b[36m")
 
 ## Features
 
