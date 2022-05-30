@@ -28,7 +28,7 @@ class SurveyProcessor:
         """
         Get Average Number of visits per day across all social media
         sites.Run a for loop to collect a valid data from the
-        user. 
+        user.
         """
         visits = self.data.col_values(7)
 
@@ -126,7 +126,7 @@ class SurveyProcessor:
 
     def calculate_consideraddicted(self):
         """
-        Calculate people who are consider affected. Run a for loop to collect 
+        Calculate people who are consider affected. Run a for loop to collect
         a valid data from the user via the terminal.
         """
 
@@ -142,7 +142,7 @@ class SurveyProcessor:
 
     def calculate_harasssedonline(self):
         """
-        Calculate people who are harassed online. Run a for loop to collect 
+        Calculate people who are harassed online. Run a for loop to collect
         a valid data from the user via the terminal.
         """
 
@@ -158,7 +158,8 @@ class SurveyProcessor:
 
     def calculate_useafterbed(self):
         """
-        Calculate the data of people who use social media after bed. Run a for loop to collect a valid data from
+        Calculate the data of people who use social media after bed.
+        Run a for loop to collect a valid data from
         the user via the terminal.
         """
 
@@ -174,7 +175,8 @@ class SurveyProcessor:
 
     def calculate_beforebed(self):
         """
-        Calculate the data of people who use social media before bed. Run a for loop to collect a valid data from
+        Calculate the data of people who use social media before bed.
+         Run a for loop to collect a valid data from
         the user via the terminal.
         """
 

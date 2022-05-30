@@ -12,7 +12,7 @@ class SurveyResult:
         sets the average hours per day data into dictionary.
         """
         self._result['AverageHoursPerDay'] = avgHours
-    
+
     def add_most_popular_socialmedia(self, mostPopular):
         """
         sets the most popular socila media data into dictionary.

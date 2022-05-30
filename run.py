@@ -27,7 +27,7 @@ SurveyResult = SurveyResult()
 
 def process_survey_data():
     """
-    Calculate the data from survey processor and store it in the survey result 
+    Calculate the data from survey processor and store it in the survey result
     """
 
     average_hour_per_day = SurveyProcessor.calculate_avg_hoursperday()
