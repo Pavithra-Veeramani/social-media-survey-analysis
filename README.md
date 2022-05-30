@@ -142,7 +142,7 @@ Enter 7 | People who are addicted | Pass
 Enter 8 | People who are harassed online | Pass
 Enter other keys | Program should exit | Pass
 Enter other keys | Thank you mesage printed | Pass
-Check Thank you message | Shows thank you message | Pass
+Check Thank you message |Application exited. To run the program again, press the button at the top. Thank you for using our social media analysis  | Pass
 
 
 ## Deployment 
@@ -186,9 +186,11 @@ Go back to [Table of contents](#table-of-contents)
 
 [PEP8 validator](http://pep8online.com/) - Pep8 validator is used to validate the code.
 
-[https://www.w3schools.com/python/default.asp] - I referred w3schools website to lookup some of Python features.
+[w3schools](https://www.w3schools.com/python/default.asp) - I referred w3schools website to lookup some of Python features.
 
-[https://docs.gspread.org/en/latest/user-guide.html] - gspread user guide was helpful too.
+[gspread](https://docs.gspread.org/en/latest/user-guide.html) - gspread user guide was helpful too.
+
+[questionpro](https://www.questionpro.com/survey-templates/social-media-survey/) - I referenced this website for the social media introduction.
 
 Mentor - I thank my mentor Marcel for his support and guidance for this project.  
 
